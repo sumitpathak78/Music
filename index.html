@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" >
+</head>
+
+<body>
+    <header>
+        <img class="photo" src="image/playlist.webp" alt="playlist" id="playlist-img">
+        <h2>Feel the Music</h2>
+        <img  src="image/sumit_pathak.webp" alt="music" id="music-img">
+    </header>
+
+    <main>
+        <div class="left">
+
+            <div class="song-image">
+                <img src="image/gif.webp" alt="anim" id="musicanim">
+            </div>
+            <div class="volume-div">
+                <div class="volume-img">
+                    <img class="photo" src="image/volume.png" alt="volume" id="vol-svg">
+                </div>
+                <input type="range" id="volume-range" onchange="volume()">
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <div class="details">
+                <h3 id="song-name">name of song</h3>
+                <h5 id="song-singer">name of singer</h5>
+            </div>
+
+            <input type="range" id="song-duration" onchange="duration()">
+            <div class="controls">
+
+                <div class="prev-img">
+                    <img class="photo" src="image/back.png" alt="back" id="prev-img" onclick="previousSong()">
+                </div>
+                <div class="play-pause">
+                    <img class="photo" src="image/stop.png" alt="stop" id="play-pause" onclick="playPause()">
+                    
+                </div>
+                <div class="next-img">
+                    <img class="photo" src="image/next.png" alt="next" id="next-img" onclick="nextSong()">
+                </div>
+
+              
+
+            </div>
+        </div>
+
+
+        <div class="playlist">
+
+            <div class="playlist-song">
+                <img src="image/sumit_pathak.webp" alt="song-img">
+                <div class="song-details">
+                    <h2>12 Saal</h2>
+                    <h5>sumit pathak</h5>
+                </div>
+            </div>
+
+            <div class="playlist-song">
+                <img src="image/OIP.jpg" alt="song-img">
+                <div class="song-details">
+                    <h2>Afusic - pal pal</h2>
+                    <h5>sumit pathak</h5>
+                </div>
+            </div>
+
+            <div class="playlist-song">
+                <img src="image/OIP (1).jpg" alt="song-img">
+                <div class="song-details">
+                    <h2>BACHALO JI</h2>
+                    <h5>sumit pathak</h5>
+                </div>
+            </div>
+
+            <div class="playlist-song">
+                <img src="image/OIP (2).jpg" alt="song-img">
+                <div class="song-details">
+                    <h2>BILLA SONIPAT ALA</h2>
+                    <h5>sumit pathak</h5>
+                </div>
+            </div>
+
+            <div class="playlist-song">
+                <img src="image/OIP (3).jpg" alt="">
+                <div class="song-details">
+                    <h2>Diamond</h2>
+                    <h5>sumit pathak</h5>
+                </div>
+            </div>
+
+            <div class="playlist-song">
+                <img src="image/OIP (4).jpg" alt="">
+                <div class="song-details">
+                    <h2>Ei miedo</h2>
+                    <h5>sumit pathak</h5>
+                </div>
+            </div>
+
+            <div class="playlist-song">
+                <img src="image/sumit_pathak.webp" alt="">
+                <div class="song-details">
+                    <h2>Ishq Tera</h2>
+                    <h5>sumit pathak</h5>
+                </div>
+            </div>
+
+            <div class="playlist-song">
+                <img src="image/OIP (2).jpg" alt="">
+                <div class="song-details">
+                    <h2>Kaash bilal saeed bloodline</h2>
+                    <h5>sumit pathak</h5>
+                </div>
+            </div>
+
+            <div class="playlist-song">
+                <img src="image/sumit_pathak.webp" alt="">
+                <div class="song-details">
+                    <h2>Moon rise</h2>
+                    <h5>sumit pathak</h5>
+                </div>
+            </div>
+
+            <div class="playlist-song">
+                <img src="image/th.jpg" alt="">
+                <div class="song-details">
+                    <h2>saiyaara (1980)</h2>
+                    <h5>sumit pathak</h5>
+                </div>
+            </div>
+
+
+            
+        </div>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
